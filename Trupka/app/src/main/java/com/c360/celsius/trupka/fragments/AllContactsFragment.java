@@ -15,6 +15,8 @@ import com.c360.celsius.trupka.R;
 
 public class AllContactsFragment extends Fragment {
 
+    public final static String TAG = "AllContactsFragment";
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

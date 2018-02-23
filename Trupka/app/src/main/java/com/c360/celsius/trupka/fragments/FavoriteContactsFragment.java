@@ -14,6 +14,10 @@ import com.c360.celsius.trupka.R;
  */
 
 public class FavoriteContactsFragment extends Fragment {
+
+    public final static String TAG = "FavoriteContactsFragment";
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
