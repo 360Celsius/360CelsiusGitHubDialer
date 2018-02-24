@@ -4,7 +4,7 @@
     android:id="@+id/navigation_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#32445C"
+    android:background="@drawable/main_activity_backgroud_gradient"
     android:fitsSystemWindows="true">
 
     <RelativeLayout
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/button_navigation_buttons_gradient"
             app:itemIconTint="@color/nav_item_state_list"
             app:itemTextColor="@color/nav_item_state_list"
             app:menu="@menu/bottom_navigation_items" />

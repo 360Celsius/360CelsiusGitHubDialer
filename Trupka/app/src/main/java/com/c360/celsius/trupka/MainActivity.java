@@ -1,28 +1,22 @@
 package com.c360.celsius.trupka;
 
-import android.graphics.Color;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
-
-import com.c360.celsius.trupka.datamodel.SideMenuItemDataModel;
 import com.c360.celsius.trupka.fragments.AllContactsFragment;
 import com.c360.celsius.trupka.fragments.DialerFragment;
 import com.c360.celsius.trupka.fragments.FavoriteContactsFragment;
 import com.c360.celsius.trupka.fragments.HIstoryContactsFragment;
 import com.c360.celsius.trupka.fragments.SettingsFragment;
-import com.c360.celsius.trupka.listadapter.SideMenuListCustomAdapter;
 import com.c360.celsius.trupka.viewhelpers.BottomNavigationViewHelper;
 
 import java.util.ArrayList;
@@ -39,13 +33,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        Window window = getWindow();
+
+        // clear FLAG_TRANSLUCENT_STATUS flag:
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+
+        // add FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS flag to the window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+
+        // finally change the color
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setStatusBarColor(ContextCompat.getColor(this,R.color.status_bar_color));
+        }
+
         mainView = (RelativeLayout) findViewById(R.id.main_view);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
 
 
         mainView = (RelativeLayout) findViewById(R.id.main_view);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-        
+
 
         //Buttom buttons navigation
         BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
@@ -90,5 +97,11 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        bottomNavigationView.setSelectedItemId(R.id.action_item3);
     }
 }
