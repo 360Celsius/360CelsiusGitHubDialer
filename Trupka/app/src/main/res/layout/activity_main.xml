@@ -24,6 +24,8 @@
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/button_navigation_buttons_gradient"
             app:itemIconTint="@color/nav_item_state_list"

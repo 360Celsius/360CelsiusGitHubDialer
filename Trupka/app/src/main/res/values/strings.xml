@@ -3,7 +3,7 @@
 
     <string name="favorites">Favorites</string>
     <string name="history">History</string>
-    <string name="dialer">Dialer</string>
+    <string name="dialer"></string>
     <string name="contacts">Contacts</string>
     <string name="more">More</string>
 </resources>

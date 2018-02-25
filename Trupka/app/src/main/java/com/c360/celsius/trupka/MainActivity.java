@@ -49,11 +49,6 @@ public class MainActivity extends AppCompatActivity {
         mainView = (RelativeLayout) findViewById(R.id.main_view);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
 
-
-        mainView = (RelativeLayout) findViewById(R.id.main_view);
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
-
-
         //Buttom buttons navigation
         BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener
