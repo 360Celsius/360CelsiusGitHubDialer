@@ -30,6 +30,8 @@ public class BottomNavigationViewHelper {
                 item.setShiftingMode(false);
 
                 if(i==2){
+                    View badge = LayoutInflater.from(item.getContext()).inflate(R.layout.buttom_nav_call_item, item, false);
+                    item.addView(badge);
                 }
                 // set once again checked value, so view will be updated
                 //noinspection RestrictedApi
