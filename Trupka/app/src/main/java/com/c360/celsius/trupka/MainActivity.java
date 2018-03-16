@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RelativeLayout mainView;
     private BottomNavigationView bottomNavigationView;
+    private BottomNavigationViewHelper bottomNavigationViewHelper;
 
 
     @Override
@@ -49,9 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
         mainView = (RelativeLayout) findViewById(R.id.main_view);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
+        bottomNavigationViewHelper = new BottomNavigationViewHelper();
 
         //Buttom buttons navigation
-        BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
+        bottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener
                 (new BottomNavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -62,22 +64,42 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.action_item1:
                                 selectedFragment = new FavoriteContactsFragment();
                                 selectedFragmentTag = FavoriteContactsFragment.TAG;
+
+                                if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+
                                 break;
                             case R.id.action_item2:
                                 selectedFragment = new HIstoryContactsFragment();
                                 selectedFragmentTag = HIstoryContactsFragment.TAG;
+
+                                if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+
                                 break;
                             case R.id.action_item3:
                                 selectedFragment = new DialerFragment();
                                 selectedFragmentTag = DialerFragment.TAG;
+
+                                if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_white);
+
                                 break;
                             case R.id.action_item4:
                                 selectedFragment = new AllContactsFragment();
                                 selectedFragmentTag = AllContactsFragment.TAG;
+
+                                if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+
                                 break;
                             case R.id.action_item5:
                                 selectedFragment = new SettingsFragment();
                                 selectedFragmentTag = SettingsFragment.TAG;
+
+                                if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+
                                 break;
                         }
                         FragmentTransaction ft =   getSupportFragmentManager().beginTransaction();
