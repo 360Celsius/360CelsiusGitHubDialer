@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragmentTag = FavoriteContactsFragment.TAG;
 
                                 if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
-                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_dialpad_gray);
 
                                 break;
                             case R.id.action_item2:
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragmentTag = HIstoryContactsFragment.TAG;
 
                                 if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
-                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_dialpad_gray);
 
                                 break;
                             case R.id.action_item3:
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragmentTag = DialerFragment.TAG;
 
                                 if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
-                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_white);
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_dialpad);
 
                                 break;
                             case R.id.action_item4:
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragmentTag = AllContactsFragment.TAG;
 
                                 if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
-                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_dialpad_gray);
 
                                 break;
                             case R.id.action_item5:
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                                 selectedFragmentTag = SettingsFragment.TAG;
 
                                 if(bottomNavigationViewHelper.getBadge() !=null && bottomNavigationViewHelper.getDialerBUtton() !=null )
-                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_phone_gray);
+                                    bottomNavigationViewHelper.setDialerImage(R.drawable.ic_dialpad_gray);
 
                                 break;
                         }

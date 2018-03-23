@@ -6,4 +6,35 @@
     <string name="dialer"></string>
     <string name="contacts">Contacts</string>
     <string name="more">More</string>
+
+
+    <string name="button_one_num">1</string>
+    <string name="button_one_text"></string>
+
+    <string name="button_two_num">2</string>
+    <string name="button_two_text">abc</string>
+
+    <string name="button_three_num">3</string>
+    <string name="button_three_text">def</string>
+
+    <string name="button_four_num">4</string>
+    <string name="button_four_text">ghi</string>
+
+    <string name="button_five_num">5</string>
+    <string name="button_five_text">jkl</string>
+
+    <string name="button_six_num">6</string>
+    <string name="button_six_text">mno</string>
+
+    <string name="button_seven_num">7</string>
+    <string name="button_seven_text">pqrs</string>
+
+    <string name="button_eight_num">8</string>
+    <string name="button_eight_text">tuv</string>
+
+    <string name="button_nine_num">9</string>
+    <string name="button_nine_text">wxyz</string>
+
+    <string name="button_zero_num">0</string>
+    <string name="button_zero_text">+</string>
 </resources>

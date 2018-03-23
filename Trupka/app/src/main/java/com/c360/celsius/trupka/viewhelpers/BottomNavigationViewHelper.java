@@ -41,7 +41,7 @@ public class BottomNavigationViewHelper {
                 if(i==2){
                     badge = LayoutInflater.from(item.getContext()).inflate(R.layout.buttom_nav_call_item, item, false);
                     dialerBUtton = (ImageView) badge.findViewById(R.id.dialer_button);
-                    setDialerImage(R.drawable.ic_phone_white);
+                    setDialerImage(R.drawable.ic_dialpad);
                     item.addView(badge);
                 }
                 // set once again checked value, so view will be updated

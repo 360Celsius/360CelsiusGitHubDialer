@@ -16,18 +16,20 @@
             android:id="@+id/list_view_placeholder"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@+id/navigation"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginTop="?attr/actionBarSize"></FrameLayout>
+            android:layout_marginRight="1dp">
+
+        </FrameLayout>
 
         <android.support.design.widget.BottomNavigationView
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/button_navigation_buttons_gradient"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
             app:itemIconTint="@color/nav_item_state_list"
             app:itemTextColor="@color/nav_item_state_list"
             app:menu="@menu/bottom_navigation_items" />
