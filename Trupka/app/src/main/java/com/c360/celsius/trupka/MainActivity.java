@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
+
+import com.c360.celsius.trupka.dbhelper.DatabaseHelper;
 import com.c360.celsius.trupka.fragments.AllContactsFragment;
 import com.c360.celsius.trupka.fragments.DialerFragment;
 import com.c360.celsius.trupka.fragments.FavoriteContactsFragment;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout mainView;
     private BottomNavigationView bottomNavigationView;
     private BottomNavigationViewHelper bottomNavigationViewHelper;
+    public static DatabaseHelper helper = null;
 
 
     @Override
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // In any activity just pass the context and use the singleton method
+        helper = DatabaseHelper.getInstance(getApplicationContext());
 
         Window window = getWindow();
 
