@@ -177,7 +177,7 @@
 
                 <include
                     android:id="@+id/redail"
-                    layout="@layout/dialer_button"
+                    layout="@layout/redial_custom_button"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
