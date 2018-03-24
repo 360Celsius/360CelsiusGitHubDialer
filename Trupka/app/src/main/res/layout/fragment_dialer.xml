@@ -10,21 +10,42 @@
     <LinearLayout
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:orientation="vertical">
 
-        <include
-            android:id="@+id/display"
-            layout="@layout/dialer_screen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_gravity="center_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/display"
+                layout="@layout/dialer_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/diler_editor"
+                android:layout_gravity="center_horizontal" />
+
+            <include
+                android:id="@+id/diler_editor"
+                layout="@layout/dialer_digit_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+
+
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1"
         android:layout_height="match_parent"
+        android:background="#ffffff"
         android:layout_width="match_parent">
 
         <TableLayout
@@ -155,6 +176,15 @@
                 android:layout_weight="1">
 
                 <include
+                    android:id="@+id/redail"
+                    layout="@layout/dialer_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal" />
+
+                <include
                     android:id="@+id/star"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
@@ -180,6 +210,15 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="2"
+                    android:layout_gravity="center_horizontal" />
+
+                <include
+                    android:id="@+id/dial"
+                    layout="@layout/dialer_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
                     android:layout_gravity="center_horizontal" />
 
 

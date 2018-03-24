@@ -9,7 +9,7 @@
 
 
     <string name="button_one_num">1</string>
-    <string name="button_one_text"></string>
+    <string name="button_one_text">xxx</string>
 
     <string name="button_two_num">2</string>
     <string name="button_two_text">abc</string>
@@ -37,4 +37,10 @@
 
     <string name="button_zero_num">0</string>
     <string name="button_zero_text">+</string>
+
+    <string name="button_star_num">*</string>
+    <string name="button_star_text"> </string>
+
+    <string name="button_hush_num">#</string>
+    <string name="button_hush_text"> </string>
 </resources>
