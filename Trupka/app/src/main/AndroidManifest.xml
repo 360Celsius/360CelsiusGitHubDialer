@@ -20,6 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:enabled="true"
+            android:multiprocess="true"
+            android:name=".dbhelper.TrupkaProvider"
+            android:exported="true" />
+
     </application>
 
 </manifest>

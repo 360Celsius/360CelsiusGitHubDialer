@@ -36,11 +36,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_CONTACTS_DATA_TABLE);
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_CALL_HISTORY_DATA_TABLE);
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_FAVORITES_DATA_TABLE);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_CONTACTS_DATA_TABLE);
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_CALL_HISTORY_DATA_TABLE);
+        sqLiteDatabase.execSQL(DatabaseHelperContract.SQL_CREATE_FAVORITES_DATA_TABLE);
     }
 }

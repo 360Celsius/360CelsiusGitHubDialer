@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +7,9 @@
     tools:context="com.c360.celsius.trupka.MainActivity">
 
     <LinearLayout
-        android:layout_weight="1"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -37,16 +36,13 @@
         </RelativeLayout>
 
 
-
-
-
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff"
-        android:layout_width="match_parent">
+        android:layout_weight="1"
+        android:background="#ffffff">
 
         <TableLayout
 
@@ -67,29 +63,29 @@
                     android:id="@+id/one"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
                 <include
                     android:id="@+id/two"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/three"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
             </TableRow>
@@ -104,29 +100,29 @@
                     android:id="@+id/four"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
                 <include
                     android:id="@+id/five"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/six"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
             </TableRow>
@@ -142,29 +138,29 @@
                     android:id="@+id/seven"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
                 <include
                     android:id="@+id/eight"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/nine"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
             </TableRow>
@@ -179,47 +175,47 @@
                     android:id="@+id/redail"
                     layout="@layout/redial_custom_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/star"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
                 <include
                     android:id="@+id/zero"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/hashtag"
                     layout="@layout/dialer_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
                 <include
                     android:id="@+id/dial"
                     layout="@layout/dialer_custom_button"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
 
 
             </TableRow>
@@ -228,9 +224,7 @@
         </TableLayout>
 
 
-
     </LinearLayout>
-
 
 
 
